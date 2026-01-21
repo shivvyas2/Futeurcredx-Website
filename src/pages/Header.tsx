@@ -15,12 +15,12 @@ const menuData = {
       {
         name: "FuteurCredX App",
         description: "Consumer credit visibility and readiness intelligence platform with real-time monitoring.",
-        link: "/futeurcredx-app",
+        link: "https://futeurcredx.com/futeurcredx-app",
       },
       {
         name: "LumiqAI",
         description: "Enterprise-grade credit intelligence APIs powering banks, fintechs, and platforms.",
-        link: "/lumiq-ai",
+        link: "https://futeurcredx.com/lumiq-ai",
       },
     ],
   },
@@ -34,17 +34,17 @@ const menuData = {
       {
         name: "For Consumers",
         description: "Actionable credit visibility, readiness insights, and pathways to qualification.",
-        link: "/solutions/consumers",
+        link: "https://futeurcredx.com/solutions/consumers",
       },
       {
         name: "For Institutions",
         description: "Enhanced credit intelligence for engagement, retention, and compliant lending.",
-        link: "/solutions/institutions",
+        link: "https://futeurcredx.com/solutions/institutions",
       },
       {
         name: "For Fintechs",
         description: "API-first infrastructure for embedding credit decisioning into modern products.",
-        link: "/solutions/fintechs",
+        link: "https://futeurcredx.com/solutions/fintechs",
       },
     ],
   },
@@ -58,12 +58,12 @@ const menuData = {
       {
         name: "Partner Ecosystem",
         description: "Join our network of resellers, referral partners, and strategic channel partners.",
-        link: "/partners/ecosystem",
+        link: "https://futeurcredx.com/partners/ecosystem",
       },
       {
         name: "Technology Partners",
         description: "Integrate LumiqAI into your platform with our developer-first APIs and SDKs.",
-        link: "/partners/technology",
+        link: "https://futeurcredx.com/partners/technology",
       },
     ],
   },
@@ -77,12 +77,12 @@ const menuData = {
       {
         name: "About Us",
         description: "Our story, mission, and the philosophy driving credit intelligence innovation.",
-        link: "/company/about",
+        link: "https://futeurcredx.com/about",
       },
       {
         name: "Legal",
         description: "Privacy policy, terms of service, and compliance documentation.",
-        link: "/legal",
+        link: "https://futeurcredx.com/privacy-policy",
       },
     ],
   },
@@ -231,9 +231,11 @@ export default function FuteurHeader() {
                         {/* Menu items */}
                         <div className="py-2">
                           {menuData[key].items.map((item) => (
-                            <Link
+                            <a
                               key={item.name}
-                              to={item.link}
+                              href={item.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
                               className="flex items-start gap-3 px-5 py-3 hover:bg-gray-50 transition-colors group"
                               onClick={() => setActiveMenu(null)}
                             >
@@ -246,7 +248,7 @@ export default function FuteurHeader() {
                                 </p>
                               </div>
                               <ChevronRight className="w-4 h-4 text-gray-300 group-hover:text-[#0066FF] mt-0.5 transition-colors" />
-                            </Link>
+                            </a>
                           ))}
                         </div>
                       </div>
@@ -335,9 +337,11 @@ export default function FuteurHeader() {
                 </p>
                 <div className="space-y-5">
                   {menuData[mobileSubmenu].items.map((item) => (
-                    <Link
+                    <a
                       key={item.name}
-                      to={item.link}
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="block"
                       onClick={() => {
                         setMenuOpen(false);
@@ -350,7 +354,7 @@ export default function FuteurHeader() {
                       <p className="text-sm text-white/50">
                         {item.description}
                       </p>
-                    </Link>
+                    </a>
                   ))}
                 </div>
               </div>
