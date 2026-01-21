@@ -6,32 +6,32 @@ export default function Footer() {
     products: {
       title: "Products",
       items: [
-        { name: "FuteurCredX App", link: "/futeurcredx-app" },
-        { name: "LumiqAI", link: "/lumiq-ai" },
+        { name: "FuteurCredX App", link: "https://www.futeurcredx.com/app" },
+        { name: "LumiqAI", link: "https://www.futeurcredx.com/lumiq-build" },
       ],
     },
     solutions: {
       title: "Solutions",
       items: [
-        { name: "For Consumers", link: "/solutions/consumers" },
-        { name: "For Institutions", link: "/solutions/institutions" },
-        { name: "For Fintechs", link: "/solutions/fintechs" },
+        { name: "For Consumers", link: "https://www.futeurcredx.com/business" },
+        { name: "For Institutions", link: "https://www.futeurcredx.com/enterprise" },
+        { name: "For Fintechs", link: "https://www.futeurcredx.com/fintech" },
       ],
     },
     partners: {
       title: "Partners",
       items: [
-        { name: "Partner Ecosystem", link: "/partners/ecosystem" },
-        { name: "Technology Partners", link: "/partners/technology" },
+        { name: "Partner Ecosystem", link: "https://www.futeurcredx.com/enterprise" },
+        { name: "Technology Partners", link: "https://www.futeurcredx.com/enterprise" },
       ],
     },
     company: {
       title: "Company",
       items: [
-        { name: "About Us", link: "/company/about" },
-        { name: "Legal", link: "/legal" },
-        { name: "Support", link: "/support" },
-        { name: "Contact", link: "/contact-us" },
+        { name: "About Us", link: "https://www.futeurcredx.com/about" },
+        { name: "Legal", link: "https://www.futeurcredx.com/privacy-policy" },
+        { name: "Support", link: "https://www.futeurcredx.com/contact-us" },
+        { name: "Contact", link: "https://www.futeurcredx.com/contact-us" },
       ],
     },
   };
@@ -72,13 +72,13 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               {footerLinks.products.items.map((item) => (
-                <Link
+                <a
                   key={item.name}
-                  to={item.link}
+                  href={item.link}
                   className="block text-white/70 hover:text-white text-sm transition-colors"
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -90,13 +90,13 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               {footerLinks.solutions.items.map((item) => (
-                <Link
+                <a
                   key={item.name}
-                  to={item.link}
+                  href={item.link}
                   className="block text-white/70 hover:text-white text-sm transition-colors"
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -108,13 +108,13 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               {footerLinks.partners.items.map((item) => (
-                <Link
+                <a
                   key={item.name}
-                  to={item.link}
+                  href={item.link}
                   className="block text-white/70 hover:text-white text-sm transition-colors"
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -126,13 +126,13 @@ export default function Footer() {
             </h4>
             <div className="space-y-3">
               {footerLinks.company.items.map((item) => (
-                <Link
+                <a
                   key={item.name}
-                  to={item.link}
+                  href={item.link}
                   className="block text-white/70 hover:text-white text-sm transition-colors"
                 >
                   {item.name}
-                </Link>
+                </a>
               ))}
             </div>
           </div>
@@ -181,21 +181,21 @@ export default function Footer() {
 
           {/* Legal Links Row */}
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/50 mb-6">
-            <Link to="/legal/privacy-policy" className="hover:text-white transition-colors">
+            <a href="https://www.futeurcredx.com/privacy-policy" className="hover:text-white transition-colors">
               Privacy Policy
-            </Link>
-            <Link to="/legal/terms-of-service" className="hover:text-white transition-colors">
+            </a>
+            <a href="https://www.futeurcredx.com/terms-of-service" className="hover:text-white transition-colors">
               Terms of Service
-            </Link>
-            <Link to="/legal/cookie-policy" className="hover:text-white transition-colors">
+            </a>
+            <a href="https://www.futeurcredx.com/legal/cookie-policy" className="hover:text-white transition-colors">
               Cookie Policy
-            </Link>
-            <Link to="/legal/data-processing" className="hover:text-white transition-colors">
+            </a>
+            <a href="https://www.futeurcredx.com/legal/data-processing" className="hover:text-white transition-colors">
               Data Processing
-            </Link>
-            <Link to="/legal/glba-compliance" className="hover:text-white transition-colors">
+            </a>
+            <a href="https://www.futeurcredx.com/legal/glba-compliance" className="hover:text-white transition-colors">
               GLBA Compliance
-            </Link>
+            </a>
           </div>
 
           {/* Legal Text */}
